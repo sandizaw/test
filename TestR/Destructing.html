@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h2 id="alert"></h2>
+    <h3 id="hee"></h3>
+    <script>
+        let fruits=['Apple','Orange'];
+        let [apple,orange]=fruits;
+        apple;
+        document.write(apple);
+
+
+        //normal form
+        let user={name:'Alice',age:22};
+        let name=user.name;
+        let age=user.age;
+        document.write("    Name    "+age+"   Age   "+age)  
+        
+        
+        //destructure form
+        let user1={Name:'Su Sandi',Age:20};
+        let{Name,Age}=user1;
+        document.write("    Destructure "+Name+"    "+Age)
+
+
+
+        //normal form with function
+        function show(emp){
+            return emp.name+' is '+emp.age+'  years old.';
+        }
+        let emp={name:'Ma Ma',age:22};
+        document.getElementById("demo").innerHTML=show(emp);
+
+
+
+        //destructure form with function
+        function alert(animal){
+            return animal.type+'      '+animal.gender;
+
+        }
+        let animal={type:'Dog ',gender:'Male'};
+        document.getElementById("alert").innerHTML=alert(animal);
+
+
+        //destructure form with function parameter
+        function hee({ name, age }) {
+        return name + ' is ' + age + ' years old.';
+        }
+        document.getElementById("hee").innerHTML=hee('hee hee',12);
+    </script>
+</body>
+</html>

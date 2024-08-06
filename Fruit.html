@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit</title>
+     <link rel="stylesheet" href="test.css">
+</head>
+<body >
+    <div>
+    <P id="text" style="font-size: 30px;">Which one do you like?</P>
+    <img id="fruit" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNiw5tpaijsc-c6sD9H7qfbpcTwL9SGigqQ&s" width="300"><br><br>
+    <button class="main" onclick="largeAndChangeFont()">
+        I Like Apple
+    </button><br><br>
+    <button class="main" onclick="largeAndChangePhoto()">
+        I Like Orange
+    </button><br><br>
+    <button class="main" onclick="ChangePhotoAndFont()">
+        I Like Watermelon
+    </button><br><br>
+    <button class="main" onclick="document.getElementById('text').style.fontSize='60px' ">Large Font Size</button><br><br>
+    <button class="main" onclick="document.getElementById('text').style.fontSize='25px' "> Small Font Size </button><br><br>
+    <button class="main" onclick="document.getElementById('text').style.display='none' "> Hide </button>
+    
+
+    <script>
+        function largeAndChangeFont(){
+            // var text=document.createElement("p");
+            // text.id="apple";
+            // text.innerText="Apple";
+            // document.body.appendChild(text);
+            document.getElementById('text').innerText="Apple";
+            document.getElementById('fruit').src='https://static.libertyprim.com/files/varietes/pomme-topaz-large.jpg?1569322124';
+        }
+    </script>
+
+    <script>
+        function largeAndChangePhoto(){
+            document.getElementById('text').innerText="Orange";
+            document.getElementById('fruit').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnL4-KMHVbydTPWcaK2F7UMZU07wQtcDPxw&s';
+        }
+    </script>
+
+    <script>
+        function ChangePhotoAndFont(){
+            document.getElementById('text').innerText="Watermelon";
+            document.getElementById('fruit').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_W2ZdDiuGPshl9vrtzNjzxaykWZ41Woi5Ng&s';
+        }
+    </script>
+    </div>
+</body>
+</html>

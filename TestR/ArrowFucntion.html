@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        
+    </head>
+        <body>
+            <h1 id="demo"></h1>
+            <h2 id="add" style="font-style: italic;"></h2>
+          <script>
+              hello=()=>{
+                return "Hello world"
+            };
+            document.getElementById("demo").innerHTML = hello();
+          
+
+
+            let nums=[1,2,3,4];
+            let result=nums.map(n => n+1)//n is a parameter
+            document.write(result);
+
+
+           
+            function add(a,b,...c){
+                return c;
+            }
+            const ans=add(1,2,3,4,5)
+            document.getElementById("add").innerHTML=ans;
+          </script>
+
+
+        </body>
+</html>

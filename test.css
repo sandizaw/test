@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background: whitesmoke;
+}
+
+.main{
+    background-color: #4CAF50;
+    border-radius: 15px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+
+}

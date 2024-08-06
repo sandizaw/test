@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS Link -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+          div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+          }
+          
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+          
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+          
+          div.desc {
+            padding: 15px;
+            text-align: center;
+          }
+          </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;" background="bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Channel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" method="post" href="https://www.youtube.com/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./viedo.html">Viedos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a  href="./login.html" >
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAyZJREFUWEfdmFuoTVEUhr+DkpAIkXINIVEuuUsoj8gtPDi5ExEehDyQohDl+iBFhBQpJRIRHtwVHsgt1yckeXCbv+Y+rb2sueZYbadOxttujfHPf4455j/G3FXUMauqY3z4bwgNBKYBg4G2QGuf6Q/AW+AacBS4WfQEimSoATAHWA50My70CNgOHAB+WGKshCYCO4F2FtAMn1fAAuBsLN5CaCWwBSqut5/AXJ+tIK8YoU3A6tiuCn5fAWwLxeQRmgkcKriY1X0CcCrLOURoCHAZUCHXhn0F+gMq+jLLIlQfuAf0MjD5BVwAHnpfxYwxxMnlCjDCQmg+sNcA+s4RmeKBk+6jgONASwPGeOB00i+dIf1+7cUuhjfOCeO5gNMkl+ETMQDgNtAvj9BQl/KrBqAbXqXzXO8DvQ1YnYDnJb90hnQdpcQx2wMsijjt97oTw5LObQ0RUnaUpZjt88qb5yefeTEgl8WTgI74j6Uz9MRpTxcDiJrmgIjfXaCPAeuWl4BMQl+AxgYQueQVtXqfdm6xj0DzUIY+u/NsakEB3gOTM669dOgI0MqIozWbhQg9dnNMdyOQ3CSM573iSlAVO7ZAvFyl1j1DhC4BIwsCVup+0WV5dIiQxoxVxhWUHYnoC+C7j1Hv6+DnptgkUVpGE8WaEKFBwPUIIZ35Dlcju3wdZbm3AZYAS4EmETwptRQ785ZpV5ruQpOhdGoG8NKYRamwWkhZe0jEPgM6J7Gy0rrQDe27MxZ86maYvoCkoYi1AO64SbF9RlA1cDBGSLflAdAjBaAOrpeGaqeIadPHvEQk40RSmSvDCxXecEA3rl5q5cO+P30zMmrkZ2htJGmKV4uqqZ1QDSWD9EpQE03bG/ekWeeV+FOAmJR3qtv9ejdbqcDTNt2/2/76ELuaelMty8mG+pVqS8UpLBVx18jYoc1sDGHGCCluLbDBeER5bqqVxYGs18RZCMlZV12zUunJXJSfpERkzsQCrYSE09Bp1Gyv5B1jwP67+tRmQJfhnz6l0+sPc2PnLK9L6uqlzl76s0Fqr45fq382GJNSmVuRI6tsJWN0nSP0G/XDgCWm/mQVAAAAAElFTkSuQmCC"/>
+                    </a>
+                    <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./login.html"></a></li>
+                      <li><a class="dropdown-item" href="#">MP4</a></li>
+                      <li><a class="dropdown-item" href="#">Others</a></li>
+                    </ul> -->
+                    <li>
+                        <div class="container-fluid">
+                            <form class="d-flex" method="get" action="https://www.youtube.com/results">
+                                <input class="form-control me-2" type="search" placeholder="Enter Data" aria-label="Search" name="search_query">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </li>
+                    
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- <img src="./image/car.jpg" sizes="300" height="300" alt="Image Description"/> -->
+
+          <div class="gallery">
+            <a target="_blank" href="./image/download (9).jpg">
+              <img src="./image/download (9).jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="./image/download (10).jpg">
+              <img src="./image/download (10).jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="./image/images (3).jpg">
+              <img src="./image/images (3).jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="./image/images (8).jpg">
+              <img src="./image/images (8).jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+          <div class="gallery">
+            <a target="_blank" href="./image/NaRaK.jpg">
+              <img src="./image/NaRaK.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+          <div class="gallery">
+            <a target="_blank" href="./image/ml.jpg">
+              <img src="./image/ml.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div><br>
+          
+    </body>
+</html>

@@ -1,0 +1,45 @@
+p {
+    padding: 10px;
+   }
+   .browser {
+    background: cyan;
+   }
+   #popular {
+    font-weight: bold;
+   }
+   input[type=text] {
+    width: 400px;
+   }
+
+   ul >li {
+    padding:20px;
+    border: 1px solid red;
+    }
+
+    a {
+        color: blue;
+        }
+        a:hover {
+        color: red;
+        }
+        a:active {
+        color: green;
+        }
+        a:visited {
+        color: brown;
+      }
+
+
+      ul li :first-child {
+      font-weight: bold;
+      }
+      ul li :last-child {
+      font-style: italic;
+      }
+      ul li :nth-child(3) {
+      color: red;
+      }
+      ul li :nth-child(2n) {
+      background: cyan;
+      }
+     
